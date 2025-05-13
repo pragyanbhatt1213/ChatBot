@@ -1,105 +1,121 @@
-# Indian Museums and Monuments AI Guide
+# RAG-Mitra: India’s AI Heritage Guide
 
-An intelligent chatbot system designed to provide detailed information about museums, monuments, and cultural artifacts across India. Built using state-of-the-art language models and retrieval-augmented generation.
+A smart conversational assistant built with **Retrieval-Augmented Generation (RAG)** to deliver rich, contextual insights into India's vast collection of museums, monuments, and cultural landmarks. Powered by cutting-edge language models and intelligent retrieval mechanisms.
 
-## Features
+---
 
-- 🏛️ Comprehensive information about Indian museums and monuments
-- 🤖 Advanced AI-powered responses using Together AI
-- 💬 Natural conversation flow with context awareness
-- 🔍 Intelligent retrieval of relevant information
-- 📚 Rich knowledge base of cultural heritage
-- 🌐 Support for multiple cities and historical sites
+## 🚀 Features
 
-## Technology Stack
+- 🏛️ **In-depth Knowledge**: Explore museums and monuments across India with detailed AI responses  
+- 🤖 **Next-Gen AI**: Harnesses Together AI's powerful LLMs for accurate, human-like conversations  
+- 💬 **Contextual Chat**: Maintains meaningful, flowing dialogue over multiple questions  
+- 🔍 **Smart Search**: Retrieves only the most relevant pieces of information using semantic similarity  
+- 📚 **Rich Cultural Content**: Learn about heritage sites with curated data  
+- 🌆 **Pan-India Coverage**: Works for cities, states, and popular historical locations  
 
-- **LangChain**: Framework for building the conversational AI system
-- **Together AI**: Large Language Model provider
-- **HuggingFace**: Embedding model for text processing
-- **ChromaDB**: Vector database for efficient information retrieval
-- **Streamlit**: User interface
-- **Python**: Primary programming language
+---
 
-## Prerequisites
+## 🛠️ Technology Stack
 
-- Python 3.8 or higher
-- Together AI API key
-- Required Python packages (see requirements.txt)
+- **LangChain** – Framework for conversational logic  
+- **Together AI** – Large Language Model backend  
+- **HuggingFace** – Embeddings for vector search  
+- **ChromaDB** – Vector database for fast similarity-based retrieval  
+- **Streamlit** – Interactive web UI  
+- **Python** – Core programming language  
 
-## Installation
+---
 
-1. Clone the repository:
+## ⚙️ Prerequisites
+
+- Python 3.8 or higher  
+- Together AI API Key  
+- Required packages from `requirements.txt`  
+
+---
+
+## 📦 Installation
+
+1. **Clone the repository**  
 ```bash
-git clone [your-repository-url]
-cd [repository-name]
+git clone https://github.com/pragyanbhatt1213/ChatBot.git
+cd ChatBot
 ```
 
-2. Install dependencies:
+2. **Install dependencies**  
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Set up environment variables:
-Create a `.env` file in the root directory:
+3. **Configure environment**  
+Create a `.env` file in the root directory and add your API credentials:
 
+```env
+TOGETHER_API_KEY=your_key_here
+```
 
+---
 
-  
-## Usage
+## ▶️ Usage
 
-Run the chatbot using Streamlit:
+Start the chatbot interface using Streamlit:  
 ```bash
 streamlit run chatbot/main.py
 ```
 
-## System Architecture
+---
 
-### Components
+## 🧱 System Architecture
 
-1. **Vector Store**
-- Uses ChromaDB for storing and retrieving document embeddings
-- Automatically initializes with predefined knowledge base
-- Efficient similarity search capabilities
+### 1. **Vector Store (ChromaDB)**
+- Stores embedded documents
+- Enables semantic similarity search
+- Auto-loads curated knowledge base
 
-2. **Language Model**
-- Powered by Together AI's Llama-3.3-70B model
-- Custom implementation for chat completion
-- Robust error handling and response formatting
+### 2. **Language Model (Together AI)**
+- Powered by LLaMA 3.3 70B model  
+- Customized for chat generation  
+- Includes fallback/error management  
 
-3. **Conversation Chain**
-- Maintains chat history
-- Contextual question answering
-- Retrieval-augmented response generation
+### 3. **Conversation Chain**
+- Tracks message history  
+- Context-aware response formulation  
+- Retrieval-Augmented Generation (RAG) pipeline  
 
-4. **Knowledge Base**
-- Curated information about Indian museums and monuments
-- Organized by cities and themes
-- Easily extensible structure
+### 4. **Knowledge Base**
+- Expertly curated info about Indian heritage  
+- City-wise and theme-wise segmentation  
+- Easily expandable for new data  
 
-## Features in Detail
+---
 
-### Intelligent Response Generation
-- Context-aware answers
-- Historical and cultural accuracy
-- Structured information delivery
+## 💡 Feature Highlights
 
-### Conversation Management
-- Memory retention across chat sessions
-- Question reformulation for better context
-- Error handling and graceful fallbacks
+### 🎯 Intelligent Response Generation
+- Deep understanding of context  
+- Historically and culturally accurate  
+- Structurally rich responses  
 
-### Information Retrieval
-- Semantic search capabilities
-- Relevant context extraction
-- Dynamic response formation
+### 🧠 Chat Memory
+- Retains multi-turn conversations  
+- Reformulates vague questions  
+- Handles out-of-scope queries gracefully  
 
-## Contributing
+### 🔍 Semantic Retrieval
+- Embedding-powered smart search  
+- Prioritizes relevance  
+- Filters noise from responses  
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+---
 
-## Acknowledgments
+## 🤝 Contributing
 
-- Together AI for providing the language model
-- HuggingFace for the embedding model
-- LangChain for the framework
+Pull Requests are welcome! Whether it’s adding a new site or improving the code, your help is appreciated.
 
+---
+
+## 🙏 Acknowledgments
+
+- **Together AI** – For their LLM API  
+- **HuggingFace** – For open-source embeddings  
+- **LangChain** – For orchestrating the conversation 
